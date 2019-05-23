@@ -1,7 +1,7 @@
 <h1><%= @song.title %></h1>
 
 <ul>
-  <% @song.artist do |a| %>
-    <li><%= link_to a.name, artist_path(a) %></li>
-  <% end %>
+ 
+    <li><%= link_to @song.artist_name, artist_path(@song.artist_id) %></li>
+
 </ul>
